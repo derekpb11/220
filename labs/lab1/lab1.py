@@ -5,7 +5,6 @@ lab1.py
 Problem: This function calculates the area of a rectangle
 """
 
-
 def calc_rec_area():
     length = eval(input("Enter the length: "))
     width = eval(input("Enter the width: "))
