@@ -39,8 +39,7 @@ def main():
 
     # STEP SIX: Calculates final monthly interest charge and prints result
     monthly_interest_charge = avg_daily_balance * decimal_interest
-    formatted_final = "{:.2f}".format(monthly_interest_charge)
-    print(formatted_final)
+    print(round(monthly_interest_charge, 2))
 
 
 if __name__ == '__main__':
