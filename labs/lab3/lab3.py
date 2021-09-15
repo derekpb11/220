@@ -52,19 +52,6 @@ def pi():
     print(acc_pi * 2)
 
 
-
-
-"""
-ask user how many terms
-acc = 1 
-for i in range(terms):
-num = 2 + (x // 2 * 2)
-denom = 1 + ((x+1) // 2 * 2)
-fraction = num / denom
-acc * fraction 
-"""
-
-
 # average()
 # tip_jar()
 # newton()
