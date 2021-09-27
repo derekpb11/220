@@ -57,7 +57,7 @@ def main():
     for _ in range(60):
         arrow_point.move(6, -7)
         arrow_stem.move(6, -7)
-        time.sleep(0.01)
+        time.sleep(0.03)
 
     # change text
     instruction.undraw()
