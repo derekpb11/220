@@ -29,8 +29,8 @@ def code(message, keyword):
     for i in temp_message:
         shift = alphabet.index(temp_keyword[acc])
         alphabet_num = alphabet.index(i)
-        cypher_num = alphabet[(alphabet_num + shift) % 26]
-        encrypted = encrypted + cypher_num
+        cipher_num = alphabet[(alphabet_num + shift) % 26]
+        encrypted = encrypted + cipher_num
         acc = acc + 1
     return encrypted
 
