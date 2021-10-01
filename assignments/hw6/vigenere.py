@@ -27,9 +27,7 @@ def code(message, keyword):
 
     # for loop to encode
     for i in temp_message:
-        # define shift
         shift = alphabet.index(temp_keyword[acc])
-        # define cypherLetter
         alphabet_num = alphabet.index(i)
         cypher_num = alphabet[(alphabet_num + shift) % 26]
         encrypted = encrypted + cypher_num
