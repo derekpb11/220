@@ -9,6 +9,7 @@ I certify that this assignment is entirely my own work.
 """
 from random import randint
 from math import sqrt
+# from graphics import *
 from graphics import Circle, Point, GraphWin, time, color_rgb
 
 
@@ -32,15 +33,15 @@ def get_random(move_amount):
 
 
 def hit_vertical(ball, win):
-    ball = ball.getCenter()
-    if ball.getX() < 50 or ball.getX() > (win.getHeight() - 50):
+    ball_c = ball.getCenter()
+    if ball_c.getX() < ball.getRadius() or ball_c.getX() > (win.getHeight() - ball.getRadius()):
         return True
     return False
 
 
 def hit_horizontal(ball, win):
-    ball = ball.getCenter()
-    if ball.getY() < 50 or ball.getY() > (win.getWidth() - 50):
+    ball_c = ball.getCenter()
+    if ball_c.getY() < ball.getRadius() or ball_c.getY() > (win.getWidth() - ball.getRadius()):
         return True
     return False
 
