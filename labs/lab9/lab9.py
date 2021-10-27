@@ -63,9 +63,6 @@ def leapYear(year):
         return False
 
 
-
-
-
 def circleOverlap():
     win = GraphWin("window", 400, 400)
     p1 = win.getMouse()
