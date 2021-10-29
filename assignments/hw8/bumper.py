@@ -7,8 +7,8 @@ Problem: this program will create a graphical simulation of bumper cars
 Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 """
+import math
 from random import randint
-from math import sqrt
 # from graphics import *
 from graphics import Circle, Point, GraphWin, time, color_rgb
 
@@ -34,24 +34,24 @@ def get_random(move_amount):
 
 def hit_vertical(ball, win):
     ball_c = ball.getCenter()
-    if ball_c.getX() < ball.getRadius() or ball_c.getX() > (win.getHeight() - ball.getRadius()):
+    if ball_c.getX() <= ball.getRadius() or ball_c.getX() >= (win.getHeight() - ball.getRadius()):
         return True
     return False
 
 
 def hit_horizontal(ball, win):
     ball_c = ball.getCenter()
-    if ball_c.getY() < ball.getRadius() or ball_c.getY() > (win.getWidth() - ball.getRadius()):
+    if ball_c.getY() <= ball.getRadius() or ball_c.getY() >= (win.getWidth() - ball.getRadius()):
         return True
     return False
 
 
 def did_collide(ball1, ball2):
-    ball1 = ball1.getCenter()
-    ball2 = ball2.getCenter()
-    dist = (ball2.getX() - ball1.getX()) ** 2 + (ball2.getY() - ball1.getY()) ** 2
-    sqrt_dist = sqrt(dist)
-    if sqrt_dist < 100:
+    ball1_p = ball1.getCenter()
+    ball2_p = ball2.getCenter()
+    dist = (ball2_p.getX() - ball1_p.getX()) ** 2 + (ball2_p.getY() - ball1_p.getY()) ** 2
+    sqrt_dist = math.sqrt(dist)
+    if sqrt_dist <= ball1.getRadius() + ball2.getRadius():
         return True
     return False
 
