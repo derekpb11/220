@@ -34,14 +34,14 @@ def get_random(move_amount):
 
 def hit_vertical(ball, win):
     ball_c = ball.getCenter()
-    if ball_c.getX() <= ball.getRadius() or ball_c.getX() >= (win.getHeight() - ball.getRadius()):
+    if ball_c.getX() <= ball.getRadius() or ball_c.getX() >= (win.getWidth() - ball.getRadius()):
         return True
     return False
 
 
 def hit_horizontal(ball, win):
     ball_c = ball.getCenter()
-    if ball_c.getY() <= ball.getRadius() or ball_c.getY() >= (win.getWidth() - ball.getRadius()):
+    if ball_c.getY() <= ball.getRadius() or ball_c.getY() >= (win.getHeight() - ball.getRadius()):
         return True
     return False
 
