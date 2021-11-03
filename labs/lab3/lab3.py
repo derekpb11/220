@@ -2,7 +2,7 @@
 Name: Derek Bolch
 lab3.py
 """
-
+# comment
 
 def average():
     grade_num = eval(input("Please enter the number of grades you want to average:  "))
