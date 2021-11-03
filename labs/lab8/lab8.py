@@ -3,7 +3,7 @@ Name: Derek Bolch
 lab8.py
 """
 from lab7 import encode, encode_better
-
+# comment
 
 def number_words(in_file_name, out_file_name):
     in_file = open(in_file_name, 'r')
