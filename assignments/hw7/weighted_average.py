@@ -7,7 +7,7 @@ Problem: this program will calculate the weighted average from a dataset
 Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 """
-
+# comment
 
 def weighted_average(in_file_name, out_file_name):
     # open files
