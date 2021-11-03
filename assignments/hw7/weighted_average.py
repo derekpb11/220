@@ -19,7 +19,7 @@ def weighted_average(in_file_name, out_file_name):
     for line in in_file.readlines():
         input_list.append(line[:])
 
-    # main for loop to split
+    # main for loop to go though splits and conversions
     for i in range(len(input_list)):
         split_name = input_list[i].split(":")
         temp_name = split_name[0]

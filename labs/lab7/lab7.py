@@ -11,19 +11,18 @@ def cash_conversion():
 
 
 def encode():
-    message_input = input("Please enter your message: ")
-    shift = eval(input("Please enter your key: "))
-    final = ''
-    for i in range(len(message_input)):
-        temp_char = message_input[i]
-        temp_ascii = ord(temp_char)
-        if temp_ascii >= 122:
-            temp_ascii = (temp_ascii + shift) - 26
-        elif temp_ascii < 122:
-            temp_ascii = (temp_ascii + shift)
-            temp_char = chr(temp_ascii)
-        final = final + temp_char
-    print(final)
+    def encode(message_input, shift):
+        final = ''
+        for i in range(len(message_input)):
+            temp_char = message_input[i]
+            temp_ascii = ord(temp_char)
+            if temp_ascii >= 122:
+                temp_ascii = (temp_ascii + shift) - 26
+            elif temp_ascii < 122:
+                temp_ascii = (temp_ascii + shift)
+                temp_char = chr(temp_ascii)
+            final = final + temp_char
+        return final
 
 
 def sphere_area(radius):
@@ -74,6 +73,6 @@ def main():
     # sum_n()
     # sum_n_cubes()
     # encode_better()
-
+    pass
 
 main()

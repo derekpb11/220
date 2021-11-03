@@ -199,7 +199,7 @@ class TestClass:
                 f'\tFAILED {horizontal_results.number_failed}/{len(test_cases.hit_horizontal_tests)} tests | +{horizontal_results.get_total_points()}')
             for index, res in enumerate(horizontal_results.failed_tests):
                 print(f'\t\ttest {index} | +{0}')
-                print(f'\t\t\tdata: {res.data}')
+                print(f'\t\t\tdata: {res.data[0].radius} {res.data[0].getCenter().getX()} {res.data[0].getCenter().getY()} {res.data[1].width}x{res.data[1].height}')
                 print(f'\t\t\tactual: {res.actual}')
                 print(f'\t\t\texpected: {res.expected}')
         total += horizontal_results.get_total_points()

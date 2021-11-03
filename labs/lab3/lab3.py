@@ -36,9 +36,9 @@ def newton():
 
 def sequence():
     x = eval(input("Please enter the number of terms: "))
-    for i in range(1, x+1):
+    for i in range(x+1):
         x = 1 + (i // 2 * 2)
-        print(x)
+        print(x, end=" ")
 
 
 def pi():
@@ -55,5 +55,5 @@ def pi():
 # average()
 # tip_jar()
 # newton()
-# sequence()
-pi()
+sequence()
+# pi()
