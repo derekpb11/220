@@ -14,7 +14,6 @@ from button import Button
 
 
 def main():
-    # Create window
     win = GraphWin("win", 600, 400)
     # create buttons
     but1 = Button(Rectangle(Point(100, 200), Point(175, 275)), "Door 1")
