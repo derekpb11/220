@@ -1,6 +1,6 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Derek Bolch
+lab11.py
 """
 
 def main():
